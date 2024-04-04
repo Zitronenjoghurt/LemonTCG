@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from src.entities.localized_values import LocalizedValue
+from src.entities.localized_value import LocalizedValue
 from src.utils.file_operations import construct_path, file_exists, file_to_string
 
 CARD_FILE_PATH = construct_path("src/data/cards/{id}.json")

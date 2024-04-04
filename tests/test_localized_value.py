@@ -1,6 +1,6 @@
 from pytest import fixture
 from src.constants.language import Language
-from src.entities.localized_values import LocalizedValue
+from src.entities.localized_value import LocalizedValue
 
 @fixture
 def full():
