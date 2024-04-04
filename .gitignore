@@ -1,8 +1,8 @@
 .DS_Store
 .vscode
-config.json
 test.py
 test*.json
+save
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

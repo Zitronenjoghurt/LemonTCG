@@ -14,3 +14,7 @@ def file_exists(file_path: str) -> bool:
 def file_to_string(file_path: str) -> str:
     with open(file_path, 'r', encoding='utf-8') as f:
         return f.read()
+    
+def string_to_file(file_path: str, data: str) -> None:
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(data)
