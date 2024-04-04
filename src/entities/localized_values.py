@@ -1,7 +1,9 @@
 from typing import Optional
 from pydantic import BaseModel
 from src.constants.language import Language
-from src.context import CONFIG
+from src.context import Context
+
+CONTEXT = Context.get_instance()
 
 class LocalizedValue(BaseModel):
     en: Optional[str] = None
@@ -12,5 +14,5 @@ class LocalizedValue(BaseModel):
         if isinstance(language, Language):
             language_str = language.value
         else:
-            language_str = CONFIG.language.value
+            language_str = CONTEXT.language.value
         return getattr(self, language_str, None) or self.en or "missing_translation"
