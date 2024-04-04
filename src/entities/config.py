@@ -1,4 +1,3 @@
-from typing import Optional
 from src.constants.language import Language
 from src.entities.base_save_state_entity import BaseSaveStateEntity
 from src.utils.file_operations import construct_path
