@@ -18,7 +18,6 @@ class Game():
     @staticmethod
     def new(players: list[Player]) -> 'Game':
         state = GameState.create_new(players=players)
-        state.save_state()
         return Game(state=state)
     
     def save(self) -> None:

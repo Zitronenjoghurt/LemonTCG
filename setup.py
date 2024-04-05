@@ -16,6 +16,6 @@ setup(
     install_requires=[
         'pydantic==2.6.4'
     ],
-    extras_require={'dev': ['pytest', 'coverage', 'pytest-cov', 'twine', 'wheel']},
+    extras_require={'dev': ['pytest', 'pytest-asyncio' 'coverage', 'pytest-cov', 'twine', 'wheel']},
     url="https://github.com/Zitronenjoghurt/LemonTCG"
 )
