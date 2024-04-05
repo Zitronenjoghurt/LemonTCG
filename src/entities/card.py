@@ -4,6 +4,7 @@ from src.utils.file_operations import construct_path, file_exists, file_to_strin
 
 CARD_FILE_PATH = construct_path("src/data/cards/{id}.json")
 
+# A card and all its important information
 class Card(BaseModel):
     id: str
     name: LocalizedValue
