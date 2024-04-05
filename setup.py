@@ -6,7 +6,7 @@ with open('README.md', encoding='utf-8') as f:
 setup(
     name="lemon_tcg",
     python_requires=">=3.9",
-    version="0.1.1",
+    version="0.1.2",
     packages=find_packages(),
     license="GNU General Public License v3.0",
     description="A library providing the game logic for the LemonTCG online multiplayer TCG game.",
